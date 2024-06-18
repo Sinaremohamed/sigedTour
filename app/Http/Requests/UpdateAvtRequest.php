@@ -22,7 +22,15 @@ class UpdateAvtRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+        "id"=> "required",
+        "formulaire_id"=> "nullable|boolean",
+        "denomination"=> "nullable|boolean",
+        "categorie"=> "nullable|boolean",
+        "adresse_postale"=> "nullable|boolean",
+        "tel"=> "nullable|boolean",
+        "email"=> "nullable|boolean",
+        "site_internet"=> "nullable|boolean",
+        "periode_exercice"=> "nullable|boolean"
         ];
     }
 }

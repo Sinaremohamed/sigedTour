@@ -32,17 +32,6 @@ class Avt extends Model
         "periode_exercice"=> "boolean"
 
     ];
-    public static array $rules = [
-        "id"=> "required",
-        "formulaire_id"=> "nullable|boolean",
-        "denomination"=> "nullable|boolean",
-        "categorie"=> "nullable|boolean",
-        "adresse_postale"=> "nullable|boolean",
-        "tel"=> "nullable|boolean",
-        "email"=> "nullable|boolean",
-        "site_internet"=> "nullable|boolean",
-        "periode_exercice"=> "nullable|boolean"
-    ];
 
     public function formulaires()
     {
